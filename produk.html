@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <title>Produk</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/bootsrap-icon/bootstrap-icons.css">
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <style>
+        section {
+            min-height: 90vh;
+        }
+        .chat{
+   margin-right: 30px;
+   background-color: rgb(69, 41, 8);
+   color: #fff;
+   padding-top: 5px;
+   padding-right: 15px;
+   padding-bottom: 5px;
+   padding-left: 15px;
+   border-radius: 10px;
+}
+    nav{
+background-color: #8c541f;
+box-shadow: 0 3px 7px -2px #000;
+}
+    nav,footer{
+        background-color: #8c541f;
+    }
+    </style>
+    <script src="js/jquery-3.6.3.min.js"></script>
+</head>
+
+<body style="background: linear-gradient(to top,#f6b67b,#fff);">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo/logo_kuy.png" height="50" alt="image">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav3" aria-controls="navbarNav3" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav3" >
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item active">
+                <a class="nav-link text-white" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="index.html#best-seller">Best Seller</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="index.html#our-team">Our Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="index.html#contact-us">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="produk.html">Shop</a>
+              </li>
+            </ul>
+            <a class="chat" type="button" href="#" style="text-decoration: none;"> <i class="bi bi-whatsapp"></i> Chat</a>
+          </div>
+        </div>
+      </nav>
+      <section class="riki-block">
+        <div class="container">
+          <h1 class="mt-4 mb-4 pt-5 text-center"> Pilih Produk</h1>
+          <p class="fs-4 text-center">kualitas Terbaik Biji Kopi Pilihan, Fresh Diambil Langsung Dari Petani</p>
+          <hr class="border border-warning border-3 opacity-10">
+          <select class="form-select form-select-sm w-25 mx-auto" id="select_kopi" aria-label=".form-select-sm example" 
+          style="background: transparent; border: 0px; font-weight: bold;">
+            <option selected disabled>Pilih Jenis Kopi</option>
+            <option value="arabica">Arabica</option>
+            <option value="robusta">Robusta</option>
+          </select>
+          <label for="select_kopi"></label>
+          <section class="riki-block team-6">
+            <div class="container">
+              <div class="row text-center justify-content-center">
+              </div>
+        <div class="row" id="baris_produk">
+              <div class="row text-center mt-5">
+                      
+              </div>
+              </div>
+            </div>
+          </section>
+      </div>
+      </section>
+      <footer class="riki-block footer-big fixed-bottom">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-8">
+              <ul class="nav justify-content-center justify-content-md-start">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html#best-seller">Best Seller</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html#our-team">Our Team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html#review">Review</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html#contact-us">Contact Us</a>
+                  </li>
+              </ul>
+            </div>
+    
+            <div class="col-12 col-md-4 mt-4 mt-md-0 text-center text-md-right text-white">
+                © 2023 Kopi Kuy. All Rights Reserved
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script>
+      var json = "data.json"
+select_kopi.onchange = function () {
+    var pilihan = this.value
+    var isi_html = ""
+    $.get(json).then(function (data) {
+        var kopi_pilihan = data[pilihan]
+        kopi_pilihan.forEach(kopi => {
+            isi_html += `<div class="col-12 col-md-6 col-lg-3">
+                    <div class="card mt-4 mx-auto text-center border-drak">
+                        <img src="${kopi.foto}" class="card-img-top" alt="...">
+                        <div class="card-body" style="background-color: #8c541f">
+                            <h5 class="card-title text-white">${kopi.nama}</h5>
+                            <div class="row py-3">
+                                <div class="col text-white">
+                                    ${kopi.size}
+                                </div>
+                                <div class="col text-white">
+                                    Tersedia : ${kopi.stok} bks
+                                </div>
+                            </div>
+                            <div class="row ml-3">
+                              <div class="col text-primary fw-bold text-black">
+                                    ${kopi.harga}
+                                </div>
+                            </div>
+                            <a href="${kopi.link}" class="btn w-100" style="background-color: rgb(69, 41, 8);
+                              color: #fff;">
+                                <i class="bi bi-cart-check"></i>
+                                Beli
+                            </a>
+                        </div>
+                    </div>
+                </div>`
+        })
+        baris_produk.innerHTML = isi_html
+    })
+}
+    </script>
+</body>
+
+</html>

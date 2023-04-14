@@ -1,0 +1,64 @@
+{
+    "arabica": [
+        {
+            "foto": "images/produk/kopi4.png",
+            "nama": "Blend Agato Arabica",
+            "size": "1000 Gram",
+            "harga": "Rp. 250.000",
+            "stok" : "5",
+            "link": "https://www.ikopi.co.id/product/java-ciwidey-arabica-250g/"
+        },
+        {
+            "foto": "images/produk/kopi5.png",
+            "nama": "Kopi Luwak Liar Arabica Aceh Gayo",
+            "size": "100 Gram",
+            "harga": "Rp. 80.000",
+            "stok" : "7",
+            "link": "https://www.tokopedia.com/semekar/kopi-luwak-liar-arabica-aceh-gayo-coffee-asli-100-gram-fresh-semekar-100-gram-bean-biji?extParam=ivf%3Dfalse%26src%3Dsearch/"
+},
+
+{
+            "foto": "images/produk/kopi6.png",
+            "nama": "Papua Wamena Murell Coffee Arabica",
+            "size": "150 Gram",
+            "harga": "Rp. 79.000",
+            "stok" : "9",
+            "link": "https://www.tokopedia.com/murrell-coffee/papua-wamena-kopi-arabica-specialty-premium-biji-bubuk-murrell-coffee-medium-dark-biji?extParam=ivf%3Dfalse%26src%3Dsearch"
+},
+
+{
+            "foto": "images/produk/kopi7.jpg",
+            "nama": "Arabika Bali Kintamani Arabica COffee",
+            "size": "200 Gram",
+            "harga": "Rp. 60.000",
+            "stok" : "4",
+            "link": "https://www.tokopedia.com/sakhacoffee/biji-kopi-bubuk-arabika-bali-kintamani-arabica-coffee-roast-beans-200g-bubuk-kasar?extParam=ivf%3Dfalse%26src%3Dsearch"
+},
+        {
+            "foto": "images/produk/kopi3.jpeg",
+            "nama": "Akapi Arabica Tanah Karo",
+            "size": "100 Gram",
+            "harga": "Rp. 50.000",
+            "stok" : "3",
+            "link": "https://www.bhinneka.com/arabica-tanah-karo-bubuk-akapi-100-gram-sku0028370658"
+        }
+    ],
+    "robusta": [
+        {
+            "foto": "images/produk/kopi1.jpeg",
+            "nama": "Kopi Toraja Robusta",
+            "size": "500 Gram",
+            "harga": "Rp. 44.000",
+            "stok" : "2",
+            "link": "https://www.tokopedia.com/kidotacoffee/kopi-toraja-arabusta-200-gram-kopi-bubuk?utm_source=google&utm_medium=organic&utm_campaign=pdp-seo"
+        },
+        {
+            "foto": "images/produk/kopi2.jpeg",
+            "nama": "Kopi Java Robusta",
+            "size": "500 Gram",
+            "harga": "Rp. 80.000",
+            "stok" : "1",
+            "link": "https://shopee.co.id/%EC%A0%95-Kopi-Robusta-Java-500Gr-Bisa-Pilih-Biji-Atau-Bubuk-Baru-i.222880991.16291542732"
+        }
+    ]
+}
