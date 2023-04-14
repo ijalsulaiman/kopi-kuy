@@ -372,7 +372,7 @@ terkait layout pada CSS untuk dapat memahami secara penuh
 }
 
 .col-review {
-   width: 100%;
+   width: 75%;
    padding: 35px 50px;
    box-shadow: 0px 0px 12px -10px #000;
    background-color: #fff;
